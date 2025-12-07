@@ -1,4 +1,5 @@
-import express from express;
+import express from 'express';
+import {createUser,getAllusers,getuserById,updateUser,deleteUser} from "../controller/userController.js"
 const router=express.Router();
 router.post("/user",createUser);
 router.get("/user",getAllusers);
